@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Cyber Glitches</title>
+  <meta name="description" content="Detailed cybersecurity services including penetration testing, server hardening, and security assessments." />
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .services-hero {
+      background: linear-gradient(135deg, #000000 0%, #001a00 50%, #000000 100%);
+      padding: 80px 20px 60px;
+      text-align: center;
+      border-bottom: 3px solid #00ff41;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 255, 65, 0.03) 0px,
+        rgba(0, 255, 65, 0.03) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      pointer-events: none;
+    }
+
+    .services-hero h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #00ff41;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 0 0 20px #00ff41;
+      position: relative;
+    }
+
+    .services-hero p {
+      font-size: 1.1rem;
+      color: #00ff41;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: transparent;
+      border: 2px solid #00ff41;
+      border-radius: 4px;
+      color: #00ff41;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .back-link:hover {
+      background: #00ff41;
+      color: #000;
+      box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+      transform: translateX(-5px);
+    }
+
+    .service-detail {
+      background: rgba(0, 255, 65, 0.03);
+      border: 2px solid #00ff41;
+      border-radius: 8px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 30px rgba(0, 255, 65, 0.2);
+    }
+
+    .service-detail h2 {
+      font-size: 2rem;
+      color: #00ff41;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .service-detail h3 {
+      font-size: 1.4rem;
+      color: #00ff41;
+      margin: 30px 0 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .service-detail p {
+      color: #00ff41;
+      opacity: 0.9;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .service-detail ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .service-detail ul li {
+      padding: 10px 0 10px 30px;
+      position: relative;
+      color: #00ff41;
+      font-family: 'Courier New', monospace;
+    }
+
+    .service-detail ul li:before {
+      content: ">";
+      position: absolute;
+      left: 0;
+      color: #00ff41;
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+
+    .pricing-table {
+      display: grid;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .pricing-item {
+      background: rgba(0, 255, 65, 0.05);
+      border: 1px solid rgba(0, 255, 65, 0.3);
+      border-radius: 4px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pricing-name {
+      font-weight: 700;
+      color: #00ff41;
+      font-size: 1.1rem;
+    }
+
+    .pricing-cost {
+      font-weight: 900;
+      color: #00ff41;
+      font-size: 1.3rem;
+      text-shadow: 0 0 10px #00ff41;
+    }
+
+    @media (min-width: 768px) {
+      .services-hero h1 {
+        font-size: 3.5rem;
+      }
+
+      .pricing-table {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-brand">
+        <h1 class="brand-name">CYBER GLITCHES</h1>
+        <p class="brand-tagline">Elite Cybersecurity • Penetration Testing • Web Security</p>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Hero -->
+  <section class="services-hero">
+    <a href="index.html" class="back-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Back to Home
+    </a>
+    <h1>Our Services</h1>
+    <p>Comprehensive cybersecurity solutions designed to protect your digital infrastructure from evolving threats</p>
+  </section>
+
+  <!-- Service Details -->
+  <section style="padding: 60px 0; background: #000000;">
+    <div class="content-wrapper">
+
+      <!-- Penetration Testing -->
+      <div class="service-detail">
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M2 12h20M17 7l-10 10M7 7l10 10"/>
+          </svg>
+          Penetration Testing
+        </h2>
+        <p>
+          Our certified ethical hackers simulate real-world attacks to identify vulnerabilities in your systems before malicious actors can exploit them. We employ the latest tools and techniques used by cybercriminals to provide you with a comprehensive security assessment.
+        </p>
+
+        <h3>What We Test</h3>
+        <ul>
+          <li>External network infrastructure and perimeter defenses</li>
+          <li>Internal network segmentation and lateral movement paths</li>
+          <li>Web applications (OWASP Top 10 vulnerabilities)</li>
+          <li>Mobile applications (iOS and Android)</li>
+          <li>Wireless network security</li>
+          <li>Cloud infrastructure (AWS, Azure, GCP)</li>
+          <li>Social engineering susceptibility</li>
+          <li>Physical security controls</li>
+        </ul>
+
+        <h3>Methodology</h3>
+        <p>
+          We follow industry-standard methodologies including PTES (Penetration Testing Execution Standard), OWASP Testing Guide, and NIST SP 800-115. Our approach includes:
+        </p>
+        <ul>
+          <li>Pre-engagement scoping and rules of engagement</li>
+          <li>Intelligence gathering and reconnaissance</li>
+          <li>Vulnerability identification and analysis</li>
+          <li>Exploitation and privilege escalation</li>
+          <li>Post-exploitation and data exfiltration simulation</li>
+          <li>Detailed reporting with remediation guidance</li>
+        </ul>
+
+        <h3>Pricing</h3>
+        <div class="pricing-table">
+          <div class="pricing-item">
+            <span class="pricing-name">External Network Pentest</span>
+            <span class="pricing-cost">$5,000 - $15,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Internal Network Pentest</span>
+            <span class="pricing-cost">$8,000 - $20,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Web Application Pentest</span>
+            <span class="pricing-cost">$4,000 - $12,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Comprehensive Assessment</span>
+            <span class="pricing-cost">$15,000 - $50,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Server Hardening -->
+      <div class="service-detail">
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/>
+            <line x1="6" y1="18" x2="6.01" y2="18"/>
+          </svg>
+          Server Hardening
+        </h2>
+        <p>
+          Reduce your attack surface with comprehensive server hardening based on CIS benchmarks and industry best practices. We configure your servers to minimize vulnerabilities while maintaining operational functionality.
+        </p>
+
+        <h3>Hardening Services Include</h3>
+        <ul>
+          <li>Operating system hardening (Linux/Windows/Unix)</li>
+          <li>Unnecessary service and port closure</li>
+          <li>Firewall configuration and rule optimization</li>
+          <li>User access control and privilege management</li>
+          <li>Patch management and vulnerability remediation</li>
+          <li>Logging and monitoring configuration</li>
+          <li>Encryption implementation (data at rest and in transit)</li>
+          <li>Security baseline documentation</li>
+        </ul>
+
+        <h3>Compliance Standards</h3>
+        <p>
+          Our hardening procedures align with multiple compliance frameworks:
+        </p>
+        <ul>
+          <li>CIS (Center for Internet Security) Benchmarks</li>
+          <li>NIST 800-53 Security Controls</li>
+          <li>PCI-DSS requirements</li>
+          <li>HIPAA security standards</li>
+          <li>ISO 27001 controls</li>
+          <li>SOC 2 requirements</li>
+        </ul>
+
+        <h3>Pricing</h3>
+        <div class="pricing-table">
+          <div class="pricing-item">
+            <span class="pricing-name">Per Server Hardening</span>
+            <span class="pricing-cost">$500 - $2,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Bulk Hardening (10+ servers)</span>
+            <span class="pricing-cost">$400/server</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Compliance Package</span>
+            <span class="pricing-cost">$10,000 - $30,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Ongoing Management (monthly)</span>
+            <span class="pricing-cost">$2,000 - $8,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Vulnerability Assessment -->
+      <div class="service-detail">
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          Web Vulnerability Assessment
+        </h2>
+        <p>
+          Comprehensive security testing of web applications to identify and remediate vulnerabilities. We test for all OWASP Top 10 vulnerabilities and beyond, ensuring your web presence is secure.
+        </p>
+
+        <h3>Assessment Coverage</h3>
+        <ul>
+          <li>SQL Injection and database security</li>
+          <li>Cross-Site Scripting (XSS) - stored, reflected, DOM-based</li>
+          <li>Cross-Site Request Forgery (CSRF)</li>
+          <li>Authentication and session management flaws</li>
+          <li>Security misconfigurations</li>
+          <li>Sensitive data exposure</li>
+          <li>XML External Entity (XXE) attacks</li>
+          <li>Broken access control</li>
+          <li>API security testing</li>
+          <li>Business logic vulnerabilities</li>
+        </ul>
+
+        <h3>Testing Approach</h3>
+        <ul>
+          <li>Automated scanning with manual validation</li>
+          <li>Source code review (white-box testing)</li>
+          <li>Dynamic application security testing (DAST)</li>
+          <li>API endpoint enumeration and testing</li>
+          <li>Authentication bypass attempts</li>
+          <li>Input validation and sanitization testing</li>
+          <li>File upload security assessment</li>
+        </ul>
+
+        <h3>Pricing</h3>
+        <div class="pricing-table">
+          <div class="pricing-item">
+            <span class="pricing-name">Basic Web App Assessment</span>
+            <span class="pricing-cost">$3,000 - $7,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Comprehensive Assessment</span>
+            <span class="pricing-cost">$8,000 - $15,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">API Security Testing</span>
+            <span class="pricing-cost">$2,500 - $6,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Secure Code Review</span>
+            <span class="pricing-cost">$5,000 - $12,000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Incident Response -->
+      <div class="service-detail">
+        <h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          24/7 Incident Response
+        </h2>
+        <p>
+          When a security incident occurs, every second counts. Our incident response team is available 24/7 to contain threats, investigate breaches, and restore normal operations quickly and efficiently.
+        </p>
+
+        <h3>Response Services</h3>
+        <ul>
+          <li>24/7 emergency hotline</li>
+          <li>Immediate threat containment and isolation</li>
+          <li>Forensic investigation and evidence collection</li>
+          <li>Malware analysis and reverse engineering</li>
+          <li>Data breach assessment and notification support</li>
+          <li>System recovery and restoration</li>
+          <li>Post-incident reporting and lessons learned</li>
+          <li>Legal and compliance support</li>
+        </ul>
+
+        <h3>Incident Types We Handle</h3>
+        <ul>
+          <li>Ransomware attacks</li>
+          <li>Data breaches and exfiltration</li>
+          <li>Malware infections</li>
+          <li>Denial of Service (DoS/DDoS) attacks</li>
+          <li>Insider threats</li>
+          <li>Account compromises</li>
+          <li>Website defacement</li>
+          <li>Supply chain attacks</li>
+        </ul>
+
+        <h3>Pricing</h3>
+        <div class="pricing-table">
+          <div class="pricing-item">
+            <span class="pricing-name">Retainer (monthly)</span>
+            <span class="pricing-cost">$5,000 - $15,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Per-Incident Response</span>
+            <span class="pricing-cost">$10,000 - $50,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Forensic Investigation</span>
+            <span class="pricing-cost">$15,000 - $75,000</span>
+          </div>
+          <div class="pricing-item">
+            <span class="pricing-name">Emergency Response (immediate)</span>
+            <span class="pricing-cost">$20,000+</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(135deg, #000000 0%, #001a00 100%); padding: 80px 20px; text-align: center; border-top: 2px solid #00ff41;">
+    <div class="content-wrapper">
+      <h2 style="font-size: 2.5rem; color: #00ff41; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 3px; text-shadow: 0 0 20px #00ff41;">
+        Ready to Secure Your Infrastructure?
+      </h2>
+      <p style="font-size: 1.1rem; color: #00ff41; opacity: 0.9; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Contact us today for a free consultation and security assessment quote
+      </p>
+      <a href="index.html#contact" style="display: inline-block; padding: 16px 40px; background: #00ff41; color: #000000; font-weight: 900; font-size: 1.1rem; border-radius: 4px; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 0 30px rgba(0, 255, 65, 0.6); transition: all 0.3s; border: 2px solid #00ff41;">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>CYBER GLITCHES</h3>
+          <p>Elite Cybersecurity Services</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="#penetration-testing">Penetration Testing</a>
+          <a href="#server-hardening">Server Hardening</a>
+          <a href="#web-security">Web Security</a>
+          <a href="#incident-response">Incident Response</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#portfolio">Portfolio</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cyber Glitches • All Rights Reserved • <a href="mailto:contact@cyberglitches.com">contact@cyberglitches.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('.site-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
