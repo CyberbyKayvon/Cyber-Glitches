@@ -145,13 +145,12 @@ body {
 .hero-video {
   position: relative;
   width: 100%;
-  height: 60vh;
-  min-height: 400px;
-  max-height: 700px;
+  height: 70vh; /* Increased from 60vh */
+  min-height: 500px; /* Increased from 400px */
+  max-height: 800px; /* Increased from 700px */
   overflow: hidden;
   background: linear-gradient(135deg, #000000 0%, #001a00 50%, #000000 100%);
   border-bottom: 3px solid #00ff41;
-  margin-bottom: 20px; /* Prevent mobile overlap */
 }
 
 .hero-gradient-overlay {
@@ -229,6 +228,8 @@ body {
   gap: 20px;
   margin-top: 40px;
   max-width: 600px;
+  width: 100%;
+  padding: 0 10px; /* Add padding for mobile */
 }
 
 .stat-item {
@@ -1027,9 +1028,15 @@ section {
 
 /* ==================== MOBILE OPTIMIZATIONS ==================== */
 @media (max-width: 768px) {
+  .hero-video {
+    height: 75vh; /* Even taller on mobile */
+    min-height: 550px; /* Ensure enough space */
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 12px;
+    margin-top: 30px;
   }
 
   .stat-item {
